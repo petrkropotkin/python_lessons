@@ -33,18 +33,6 @@ punishment - malum, multa
 # pomum - apple
 # popula - apple
 # popum - fruit
-# Eng = dict()
-# Lat = dict()
-# for i in range(int(input())):
-#     en, *la = input().replace(',', '').split()
-#     Eng[en] = la
-#     for lat in la:
-#         Lat[lat] = Lat.get(lat, []) + [en] #создаем значения латинско-английского словаря
-#         Lat.pop("-", None)
-# print(len(Lat))
-# for lat in sorted(Lat.keys()):
-#     print(lat, end=" - ")
-#     print(*Lat[lat], sep=", ")
 
 dic_en = {}
 dic_lat = {}
@@ -53,7 +41,6 @@ for i in range(int(input())):
     eng_word,*lat_words = input().replace(',', '').split()
     lat_words = lat_words[1:]
     dic_en[eng_word] = lat_words # ==> {'apple': ['malum', 'pomum', 'popula']}
-
 
     for i in lat_words:
         dic_lat[i] = dic_lat.get(i,[]) +[eng_word]
