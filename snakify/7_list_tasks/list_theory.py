@@ -39,3 +39,5 @@ print(' '.join([str(i) for i in a]))
 # the next line causes a type error,
 # as join() can only concatenate strs
 # print(' '.join(a))
+
+print(*a)
