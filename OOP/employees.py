@@ -47,10 +47,12 @@ if __name__ == '__main__':
     bob.work() # bob makes pizza
     bob.giveRaise(0.20) # bob makes pizza
     print(bob); print() # <Employee: name=bob, salary=60000.0>
+    for klass in Employee, Chef, Server, PizzaRobot:
+        obj = klass(klass.__name__)
+        obj.work()
 
-for klass in Employee, Chef, Server, PizzaRobot:
-    obj = klass(klass.__name__)
-    obj.work()
+
+    
 
 # Employee does stuff
 # Chef makes food
